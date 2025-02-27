@@ -11,6 +11,30 @@ public_folder: "/images/uploads"
 
 # Collections define the structure for content types
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "src/README.md"  # VuePress uses README.md as index
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+          - {label: "Hero Text", name: "heroText", widget: "string", required: false}
+          - {label: "Tagline", name: "tagline", widget: "string", required: false}
+          - {label: "Actions", name: "actions", widget: "list", fields: [
+              {label: "Text", name: "text", widget: "string"},
+              {label: "Link", name: "link", widget: "string"},
+              {label: "Type", name: "type", widget: "select", options: ["primary", "secondary"]}
+            ], required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+          
+      - name: "about"
+        label: "About Page"
+        file: "src/about/index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "news"
     label: "News"
     folder: "src/news"
