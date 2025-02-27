@@ -51,18 +51,22 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", default: []}
       
+  # In your config.yml
+collections:
   - name: "members"
-    label: "Members"
-    folder: "src/members"
+    label: "Team Members"
+    folder: "src/data/members"
+    extension: "json"
     create: true
     fields:
-      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
       - {label: "Position", name: "position", widget: "string"}
       - {label: "Photo", name: "image", widget: "image", required: false}
       - {label: "Email", name: "email", widget: "string", required: false}
       - {label: "Website", name: "website", widget: "string", required: false}
-      - {label: "Bio", name: "body", widget: "markdown"}
-      
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "number", default: 10, required: false, hint: "Lower numbers appear first"}
+
   - name: "publications"
     label: "Publications"
     folder: "src/publications"

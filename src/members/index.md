@@ -1,8 +1,10 @@
 ---
-title: Lab Members
-layout: Layout
+title: Our Team
+description: Meet the talented researchers and staff of Kokenylab
 ---
 
-# Lab Members
+# Our Team
 
-Our team consists of passionate researchers dedicated to advancing knowledge in our field.
+Meet the dedicated researchers and staff who make our lab's work possible.
+
+<TeamMembers />
