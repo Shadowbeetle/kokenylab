@@ -1,6 +1,6 @@
 ---
 title: Lab Members
-layout: PageLayout
+layout: Layout
 ---
 
 # Lab Members

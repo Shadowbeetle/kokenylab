@@ -1,6 +1,6 @@
 ---
 title: Publications
-layout: PageLayout
+layout: Layout
 ---
 
 # Publications

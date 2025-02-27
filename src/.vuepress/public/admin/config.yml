@@ -34,6 +34,9 @@ collections:
         file: "src/about/index.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "AboutLayout"}
+          - {label: "Contact Information", name: "contact", widget: "markdown", required: false}
+          - {label: "Research Areas", name: "research", widget: "markdown", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "news"
     label: "News"
