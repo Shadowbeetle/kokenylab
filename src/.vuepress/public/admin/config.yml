@@ -44,6 +44,9 @@ collections:
     label: "News"
     folder: "src/news"
     create: true
+    filter:
+      field: article
+      value: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -52,6 +55,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", default: []}
+      - {label: "Is Article?", "name": "article", widget: "hidden", default: true}
       
   - name: "members"
     label: "Team Members"
