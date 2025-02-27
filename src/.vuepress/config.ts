@@ -19,6 +19,8 @@ export default defineUserConfig({
     markdown: {
       component: true,
     },
+    
+    sidebar: false,
 
     plugins: {
       blog: {
