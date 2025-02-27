@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Publish mode for editorial workflow (optional)
+publish_mode: editorial_workflow
+
+# Media folder where uploads will be stored
+media_folder: "src/.vuepress/public/images/uploads"
+public_folder: "/images/uploads"
+
+# Collections define the structure for content types
+collections:
+  - name: "news"
+    label: "News"
+    folder: "src/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", default: []}
+      
+  - name: "members"
+    label: "Members"
+    folder: "src/members"
+    create: true
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Photo", name: "image", widget: "image", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "Website", name: "website", widget: "string", required: false}
+      - {label: "Bio", name: "body", widget: "markdown"}
+      
+  - name: "publications"
+    label: "Publications"
+    folder: "src/publications"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string"}
+      - {label: "Publication Date", name: "date", widget: "datetime"}
+      - {label: "Journal/Conference", name: "venue", widget: "string"}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "URL", name: "url", widget: "string", required: false}
+      - {label: "Abstract", name: "body", widget: "markdown", required: false}
