@@ -11,7 +11,15 @@ export default defineUserConfig({
 
   theme: hopeTheme({
     plugins: {
-      blog: true,
+      blog: {
+        filter: ({ frontmatter, filePathRelative }) => {
+          console.log(frontmatter, filePathRelative);
+          return (
+            filePathRelative?.startsWith("news/") &&
+            frontmatter.layout !== "BlogHome"
+          );
+        },
+      },
     },
     navbar: [
       { text: "Home", link: "/" },
