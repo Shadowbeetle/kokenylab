@@ -1,13 +1,13 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
 
   lang: "en-US",
-  title: "Docs Demo",
-  description: "A docs demo for vuepress-theme-hope",
+  title: "Kοkenylab",
+  description:
+    "Kidney Research Group at Semmeleweis University, Institute of Translational Medicine",
 
   theme: hopeTheme({
     plugins: {
