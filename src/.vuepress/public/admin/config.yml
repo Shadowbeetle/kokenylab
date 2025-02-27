@@ -51,8 +51,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", default: []}
       
-  # In your config.yml
-collections:
   - name: "members"
     label: "Team Members"
     folder: "src/data/members"
