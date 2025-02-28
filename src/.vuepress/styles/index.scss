@@ -1,1 +1,19 @@
 // place your custom styles here
+.content-box {
+	display: block;
+	padding: 0.75rem 1.25rem;
+	border-radius: 0.4rem;
+	background: var(--vp-c-bg-elv);
+	color: inherit;
+	box-shadow: 0 1px 3px 1px var(--vp-c-shadow);
+	transition: background var(--vp-t-color), box-shadow var(--vp-t-transform);
+}
+
+.content-box .content-title {
+	position: relative;
+	display: inline-block;
+	color: var(--vp-c-text);
+	font-size: 1.25rem;
+	font-family: var(--vp-font-heading);
+	line-height: 1.6;
+}
