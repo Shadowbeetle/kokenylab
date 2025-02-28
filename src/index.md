@@ -1,7 +1,6 @@
 ---
 home: true
 layout: Landing
-icon: house
 title: Project home
 heroImage: /logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg

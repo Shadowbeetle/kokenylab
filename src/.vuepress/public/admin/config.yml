@@ -21,7 +21,6 @@ collections:
         file: "src/index.md"
         fields:
           - {label: "Layout", name: "home", widget: "hidden", default: true}
-          - {label: "Icon", name: "icon", widget: "string", default: "house"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
           - {label: "Background Image (Light)", name: "bgImage", widget: "image", required: false}
