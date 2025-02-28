@@ -311,7 +311,7 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/advanced/pwa.html
 
 copyright: false
-footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | MIT Licensed, Copyright © 2019-present Mr.Hope
+footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
 ---
 
 This is an example of a project homepage. You can place your main content here.
