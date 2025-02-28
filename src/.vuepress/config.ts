@@ -19,7 +19,7 @@ export default defineUserConfig({
   theme: hopeTheme(
     {
       author: {
-        name: "Anna Manzeger",
+        name: "Kokenylab",
       },
       markdown: {
         align: true,

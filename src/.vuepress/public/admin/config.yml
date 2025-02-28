@@ -36,6 +36,9 @@ collections:
             name: "aboutTitle"
             widget: string
           - {label: "About Content", name: "body", widget: "markdown"}
+          - label: Max Articles Length
+            name: articlesLength
+            widget: number
           - label: Funding Title
             name: fundingTitle
             widget: string

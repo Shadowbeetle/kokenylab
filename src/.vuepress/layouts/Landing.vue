@@ -18,13 +18,14 @@ interface LandingFrontmatter extends ThemeBlogHomePageFrontmatter {
 	aboutTitle: string;
 	fundingImages: FundingImage[];
 	fundingTitle: string;
+	articlesLength: number;
 }
 
-const articles = useArticles();
-const frontmatter = usePageFrontmatter<ThemeBlogHomePageFrontmatter>();
-const aboutTitle = computed(() => (frontmatter.value as LandingFrontmatter).aboutTitle);
-const fundingTitle = computed(() => (frontmatter.value as LandingFrontmatter).fundingTitle);
-const fundingImages = computed(() => (frontmatter.value as LandingFrontmatter).fundingImages);
+const frontmatter = usePageFrontmatter<LandingFrontmatter>();
+const articles = useArticles().value.items.slice(0, frontmatter.value.articlesLength);
+const aboutTitle = computed(() => frontmatter.value.aboutTitle);
+const fundingTitle = computed(() => frontmatter.value.fundingTitle);
+const fundingImages = computed(() => frontmatter.value.fundingImages);
 
 console.log(frontmatter.value)
 </script>
@@ -55,7 +56,7 @@ console.log(frontmatter.value)
 							</h1>
 
 							<DropTransition appear :delay="0.24">
-								<ArticleList :items="articles.items" />
+								<ArticleList :items="articles" />
 							</DropTransition>
 						</div>
 						<div class="column">

@@ -12,8 +12,9 @@ heroText: Project name
 tagline: You can place the description of the project here.
 copyright: false
 footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
-aboutTitle: About
+aboutTitle: Welcome to the website of Kokenylab!
 aboutContent: Hello
+articlesLength: 5
 fundingTitle: Funding
 fundingImages: 
   - src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/900px-Tesla_logo.png
