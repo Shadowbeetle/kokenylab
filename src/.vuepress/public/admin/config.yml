@@ -61,16 +61,6 @@ collections:
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
 
-      - name: "about"
-        label: "About Page"
-        file: "src/about/index.md"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "AboutLayout"}
-          - {label: "Contact Information", name: "contact", widget: "markdown", required: false}
-          - {label: "Research Areas", name: "research", widget: "markdown", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
-
   - name: "news"
     label: "News"
     folder: "src/news"

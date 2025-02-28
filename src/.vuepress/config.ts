@@ -78,7 +78,6 @@ export default defineUserConfig({
       },
       navbar: [
         { text: "Home", link: "/" },
-        { text: "About", link: "/about/" },
         { text: "News", link: "/news/" },
         { text: "Members", link: "/members/" },
         { text: "Publications", link: "/publications/" },
