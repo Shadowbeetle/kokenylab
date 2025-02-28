@@ -1,7 +1,7 @@
 <template>
 	<div class="content-box about-box">
-		<header class="content-title">About</header>
-		<Markdown :content="props.content" />
+		<header class="content-title" v-html="props.title"></header>
+		<slot></slot>
 	</div>
 </template>
 
@@ -11,7 +11,7 @@ import Markdown from './Markdown.vue';
 // Define props with validation and types
 interface AboutBoxProps {
 	// Markdown content to render
-	content: string;
+	title: string;
 }
 
 const props = withDefaults(defineProps<AboutBoxProps>(), {

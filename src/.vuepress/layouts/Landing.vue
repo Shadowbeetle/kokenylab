@@ -22,7 +22,6 @@ const articles = useArticles();
 const frontmatter = usePageFrontmatter<ThemeBlogHomePageFrontmatter>();
 const projects = computed(() => frontmatter.value.projects ?? []);
 const aboutTitle = computed(() => (frontmatter.value as LandingFrontmatter).aboutTitle);
-const aboutContent = computed(() => (frontmatter.value as LandingFrontmatter).aboutContent);
 
 console.log(frontmatter.value)
 </script>
@@ -36,7 +35,9 @@ console.log(frontmatter.value)
 			<div class="blog-page-wrapper custom">
 				<main id="main-content" class="vp-blog-home">
 					<DropTransition appear :delay="0.16">
-						<AboutBox :title="aboutTitle" :content="aboutContent" />
+						<AboutBox :title="aboutTitle">
+							<MarkdownContent :custom="true" />
+						</AboutBox>
 					</DropTransition>
 					<DropTransition appear :delay="0.24">
 						<ProjectPanel :items="projects" />
@@ -51,10 +52,6 @@ console.log(frontmatter.value)
 					<InfoPanel />
 				</DropTransition> -->
 			</div>
-
-			<DropTransition appear :delay="0.28">
-				<MarkdownContent />
-			</DropTransition>
 		</div>
 	</BlogWrapper>
 </template>
