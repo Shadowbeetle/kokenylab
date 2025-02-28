@@ -36,6 +36,25 @@ collections:
             name: "aboutTitle"
             widget: string
           - {label: "About Content", name: "body", widget: "markdown"}
+          - label: Funding Title
+            name: fundingTitle
+            widget: string
+          - label: Funding Images
+            name: fundingImages
+            widget: list 
+            required: false
+            fields:
+              - label: Image
+                name: src
+                widget: image
+              - label: Height (px)
+                name: height
+                widget: number
+                default: 150
+              - label: Width (px)
+                name: width
+                widget: number
+                default: 150
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
 

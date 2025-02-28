@@ -6,8 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import Markdown from './Markdown.vue';
-
 // Define props with validation and types
 interface AboutBoxProps {
 	// Markdown content to render
@@ -20,6 +18,6 @@ const props = withDefaults(defineProps<AboutBoxProps>(), {
 
 <style scoped>
 .about-box {
-	margin: 1rem 0;
+	margin: 0 0 1rem 0;
 }
 </style>

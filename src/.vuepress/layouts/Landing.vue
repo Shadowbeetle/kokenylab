@@ -12,16 +12,20 @@ import { useArticles } from "vuepress-theme-hope/modules/blog/composables/index.
 
 import "vuepress-theme-hope/blog/styles/home.scss";
 import AboutBox from "../components/AboutBox.vue";
+import Funding, { type FundingImage } from "../components/Funding.vue";
 
 interface LandingFrontmatter extends ThemeBlogHomePageFrontmatter {
 	aboutTitle: string;
-	aboutContent: string;
+	fundingImages: FundingImage[];
+	fundingTitle: string;
 }
 
 const articles = useArticles();
 const frontmatter = usePageFrontmatter<ThemeBlogHomePageFrontmatter>();
 const projects = computed(() => frontmatter.value.projects ?? []);
 const aboutTitle = computed(() => (frontmatter.value as LandingFrontmatter).aboutTitle);
+const fundingTitle = computed(() => (frontmatter.value as LandingFrontmatter).fundingTitle);
+const fundingImages = computed(() => (frontmatter.value as LandingFrontmatter).fundingImages);
 
 console.log(frontmatter.value)
 </script>
@@ -33,19 +37,26 @@ console.log(frontmatter.value)
 			</BlogHero>
 
 			<div class="blog-page-wrapper custom">
-				<main id="main-content" class="vp-blog-home">
-					<DropTransition appear :delay="0.16">
-						<AboutBox :title="aboutTitle">
-							<MarkdownContent :custom="true" />
-						</AboutBox>
-					</DropTransition>
-					<DropTransition appear :delay="0.24">
-						<ProjectPanel :items="projects" />
-					</DropTransition>
+				<main id="main-content">
+					<div class="two-columns">
+						<div class="column">
+							<DropTransition appear :delay="0.16">
+								<AboutBox :title="aboutTitle">
+									<MarkdownContent :custom="true" />
+								</AboutBox>
+							</DropTransition>
+							<DropTransition appear :delay="0.24">
+								<ProjectPanel :items="projects" />
+							</DropTransition>
 
-					<DropTransition appear :delay="0.24">
-						<ArticleList :items="articles.items" />
-					</DropTransition>
+							<DropTransition appear :delay="0.24">
+								<ArticleList :items="articles.items" />
+							</DropTransition>
+						</div>
+						<div class="column">
+							<Funding :title="fundingTitle" :funding-images="fundingImages" />
+						</div>
+					</div>
 				</main>
 
 				<!-- <DropTransition appear :delay="0.16">
@@ -57,11 +68,15 @@ console.log(frontmatter.value)
 </template>
 
 <style lang="scss">
-.blog-page-wrapper.custom {
-	direction: rtl;
+.two-columns {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 20px;
+	flex-direction: column;
 
-	>*>* {
-		direction: ltr;
+	@media (min-width: 768px) {
+		flex-direction: row;
 	}
 }
 </style>
