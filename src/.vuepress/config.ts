@@ -19,13 +19,13 @@ export default defineUserConfig({
     markdown: {
       component: true,
     },
-    
+    lastUpdated: false,
+    contributors: false,
     sidebar: false,
 
     plugins: {
       blog: {
         filter: ({ frontmatter, filePathRelative }) => {
-          console.log(frontmatter, filePathRelative);
           return (
             filePathRelative?.startsWith("news/") &&
             frontmatter.layout !== "BlogHome"
