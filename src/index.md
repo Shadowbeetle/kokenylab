@@ -1,6 +1,6 @@
 ---
 home: true
-layout: BlogHome
+layout: Landing
 icon: house
 title: Project home
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
@@ -12,6 +12,8 @@ heroText: Project name
 tagline: You can place the description of the project here.
 copyright: false
 footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
+aboutTitle: About
+aboutContent: Hello
 ---
 
 This is an example of a project homepage. You can place your main content here.

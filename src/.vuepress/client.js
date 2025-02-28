@@ -1,7 +1,11 @@
 import { defineClientConfig } from "vuepress/client";
 import TeamMembers from "./components/TeamMembers.vue";
+import Landing from "./layouts/Landing.vue";
 
 export default defineClientConfig({
+  layouts: {
+    Landing,
+  },
   enhance({ app, router, siteData }) {
     app.component("TeamMembers", TeamMembers);
   },

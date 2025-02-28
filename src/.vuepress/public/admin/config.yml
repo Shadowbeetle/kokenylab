@@ -32,7 +32,12 @@ collections:
           - label: "Tagline"
             name: "tagline"
             widget: "string"
-          
+          - label: "About Title"
+            name: "aboutTitle"
+            widget: string
+          - label: About Content
+            name: aboutContent
+            widget: markdown 
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
           - {label: "Body Content", name: "body", widget: "markdown"}
