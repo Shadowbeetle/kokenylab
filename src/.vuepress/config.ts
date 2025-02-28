@@ -16,8 +16,41 @@ export default defineUserConfig({
   plugins: [memberDataPlugin()],
 
   theme: hopeTheme({
+    author: {
+      name: "Anna Manzeger",
+    },
     markdown: {
+      align: true,
+      attrs: true,
+      codeTabs: true,
       component: true,
+      demo: true,
+      figure: true,
+      gfm: true,
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+      mark: true,
+      plantuml: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
     },
     lastUpdated: false,
     contributors: false,
@@ -31,6 +64,13 @@ export default defineUserConfig({
             frontmatter.layout !== "BlogHome"
           );
         },
+      },
+      icon: {
+        assets: ["fontawesome", "fontawesome-with-brands", "iconify"],
+        type: "fontawesome",
+      },
+      components: {
+        components: ["Badge", "VPCard"],
       },
     },
     navbar: [
