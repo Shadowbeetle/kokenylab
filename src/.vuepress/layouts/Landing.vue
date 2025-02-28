@@ -45,23 +45,19 @@ console.log(frontmatter.value)
 									<MarkdownContent :custom="true" />
 								</AboutBox>
 							</DropTransition>
-							<DropTransition appear :delay="0.24">
-								<ProjectPanel :items="projects" />
-							</DropTransition>
+
 
 							<DropTransition appear :delay="0.24">
 								<ArticleList :items="articles.items" />
 							</DropTransition>
 						</div>
 						<div class="column">
-							<Funding :title="fundingTitle" :funding-images="fundingImages" />
+							<DropTransition appear :delay="0.20">
+								<Funding :title="fundingTitle" :funding-images="fundingImages" />
+							</DropTransition>
 						</div>
 					</div>
 				</main>
-
-				<!-- <DropTransition appear :delay="0.16">
-					<InfoPanel />
-				</DropTransition> -->
 			</div>
 		</div>
 	</BlogWrapper>
