@@ -72,6 +72,10 @@ console.log(frontmatter.value)
 </template>
 
 <style scoped lang="scss">
+.vp-blog-hero {
+	color: inherit
+}
+
 .two-columns {
 	display: flex;
 	max-width: 1200px;

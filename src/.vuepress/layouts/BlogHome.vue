@@ -2,13 +2,10 @@
 import { computed } from "vue";
 import { usePageFrontmatter } from "vuepress/client";
 import type { ThemeBlogHomePageFrontmatter } from "vuepress-theme-hope/client";
-import BingHeroBackground from "vuepress-theme-hope/presets/BingHeroBackground.js";
-import HitokotoBlogHero from "vuepress-theme-hope/presets/HitokotoBlogHero.js";
 
 import MarkdownContent from "vuepress-theme-hope/components/MarkdownContent.js";
 import { DropTransition } from "vuepress-theme-hope/components/transitions/index.js";
 import ArticleList from "vuepress-theme-hope/modules/blog/components/ArticleList.js";
-import BlogHero from "vuepress-theme-hope/modules/blog/components/BlogHero.js";
 import BlogWrapper from "vuepress-theme-hope/modules/blog/components/BlogWrapper.js";
 import InfoPanel from "vuepress-theme-hope/modules/blog/components/InfoPanel.js";
 import ProjectPanel from "vuepress-theme-hope/modules/blog/components/ProjectPanel.js";
