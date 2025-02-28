@@ -1,6 +1,7 @@
+import path from "path";
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import { getDirname, path } from "vuepress/utils";
+import { getDirname } from "vuepress/utils";
 import { memberDataPlugin } from "./plugins/memberDataPlugin.js";
 
 const __dirname = getDirname(import.meta.url);
