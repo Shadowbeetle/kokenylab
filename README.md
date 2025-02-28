@@ -1,0 +1,1 @@
+Editable favicon from https://www.svgrepo.com/svg/284209/kidneys-kidney?edit=true
