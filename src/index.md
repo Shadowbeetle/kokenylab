@@ -1,0 +1,21 @@
+---
+home: true
+layout: BlogHome
+icon: house
+title: Project home
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+bgImageStyle:
+  background-attachment: fixed
+heroText: Project name
+tagline: You can place the description of the project here.
+copyright: false
+footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
+---
+
+This is an example of a project homepage. You can place your main content here.
+
+To use this layout, you need to set `home: true` in the page front matter.
+
+For related descriptions of configuration items, please see [Project HomePage Layout Config](https://theme-hope.vuejs.press/guide/layout/home/).
