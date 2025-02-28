@@ -21,6 +21,7 @@ export default defineUserConfig({
       author: {
         name: "Kokenylab",
       },
+      logo: "/logo.png",
       markdown: {
         align: true,
         attrs: true,
