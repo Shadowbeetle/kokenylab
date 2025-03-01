@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of new developments in quantum computing have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 Ethical considerations have been central to this work from the beginning. A framework for responsible innovation has been established that balances progress with important safeguards and accountability measures.
 

@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of breakthrough in medical research have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 The data collected during this project has provided valuable insights that will guide future work. Analysis reveals patterns that were previously undetected, offering new perspectives on complex problems that have remained unsolved for decades.
 

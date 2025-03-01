@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of advances in artificial intelligence research have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 Educational components have been integrated into the project to build capacity for the future. Training programs have already begun preparing specialists who will extend this work in new directions.
 

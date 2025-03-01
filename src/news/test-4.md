@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of public health initiative results have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 The technology platform supporting this work represents years of development and refinement. Its architecture allows for flexibility while maintaining the performance characteristics necessary for demanding applications.
 

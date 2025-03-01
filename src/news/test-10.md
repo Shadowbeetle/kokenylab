@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of public health initiative results have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 Global implications of this work have attracted attention from international partners. Cooperation across borders has accelerated progress and ensured that diverse perspectives inform ongoing development.
 

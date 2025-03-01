@@ -6,7 +6,7 @@ article: true
 ---
 Recent advancements in the field of new developments in quantum computing have shown promising results that could revolutionize how we approach these challenges. Experts believe this represents a significant step forward in addressing longstanding problems.
 
-<-- more -->
+<!-- more -->
 
 Funding for this initiative comes from multiple sources, reflecting broad interest in the outcomes. Collaborative efforts between public and private entities have created a strong foundation for continued development and practical implementation.
 
