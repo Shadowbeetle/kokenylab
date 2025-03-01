@@ -2,13 +2,16 @@
 // Cannot use TS when import from @temp
 import { ref } from 'vue';
 import { contact as contactData } from '@temp/contact-data/contact.js';
+import { AutoLink } from "vuepress/client";
 
 const props = defineProps(['title']);
 const contact = ref(contactData);
 </script>
 <template>
 	<div class="content-box contact-box">
-		<header class="content-title" v-html="props.title"></header>
+		<AutoLink :config="{ link: '/contact/', text: 'Contact', }" :active="true" class="news-link">
+			<header class="content-title" v-html="props.title"></header>
+		</AutoLink>
 		<div>
 			<img width="150" height="150" :src="contact.contactPersonPhoto" />
 			<h3>{{ contact.contactPersonName }}</h3>

@@ -39,7 +39,7 @@ const fundingImages = computed(() => frontmatter.value.fundingImages);
 				<main id="main-content">
 					<div class="two-columns">
 						<div class="column">
-							<DropTransition appear :delay="0.16">
+							<DropTransition appear :delay="0.12">
 								<AboutBox :title="aboutTitle">
 									<MarkdownContent :custom="true" />
 								</AboutBox>
@@ -59,7 +59,9 @@ const fundingImages = computed(() => frontmatter.value.fundingImages);
 							</DropTransition>
 						</div>
 						<div class="column">
-							<ContactCard title="Contact" />
+							<DropTransition appear :delay="0.16">
+								<ContactCard title="Contact" />
+							</DropTransition>
 							<DropTransition appear :delay="0.20">
 								<Funding :title="fundingTitle" :funding-images="fundingImages" />
 							</DropTransition>
