@@ -45,17 +45,22 @@ collections:
       - name: "publications"
         label: "Publications"
         file: "src/publications/index.md"
-        create: true
         fields:
           - {label: Title, name: title, widget: string, required: true}
           - {label: "Content", name: "body", widget: "markdown", required: true}
+
+      - name: "contact"
+        label: Contact Page (Only Body, info taken from Info/Contact)
+        file: src/contact/index.md
+        fields:
+          - {label: Content, name: body, widget: markdown}
 
   - name: "info"
     label: "Info"
     files: 
       - name: contact
         label: Contact Info
-        file: data/contact/contact.json
+        file: src/data/contact/contact.json
         extension: json
         fields:
           - {label: Contact Phone, name: contactPhone, widget: string, required: false}
@@ -98,3 +103,4 @@ collections:
       - {label: "Website", name: "website", widget: "string", required: false}
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Order", name: "order", widget: "number", default: 10, required: false, hint: "Lower numbers appear first"}
+
