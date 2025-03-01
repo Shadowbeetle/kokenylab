@@ -60,6 +60,14 @@ collections:
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
 
+      - name: "publications"
+        label: "Publications"
+        file: "src/publications/index.md"
+        create: true
+        fields:
+          - {label: Title, name: title, widget: string, required: true}
+          - {label: "Content", name: "body", widget: "markdown", required: true}
+
   - name: "news"
     label: "News"
     folder: "src/news"
@@ -90,16 +98,3 @@ collections:
       - {label: "Website", name: "website", widget: "string", required: false}
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Order", name: "order", widget: "number", default: 10, required: false, hint: "Lower numbers appear first"}
-
-  - name: "publications"
-    label: "Publications"
-    folder: "src/publications"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Authors", name: "authors", widget: "string"}
-      - {label: "Publication Date", name: "date", widget: "datetime"}
-      - {label: "Journal/Conference", name: "venue", widget: "string"}
-      - {label: "DOI", name: "doi", widget: "string", required: false}
-      - {label: "URL", name: "url", widget: "string", required: false}
-      - {label: "Abstract", name: "body", widget: "markdown", required: false}
