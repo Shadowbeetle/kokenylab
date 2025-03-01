@@ -55,7 +55,7 @@ collections:
     files: 
       - name: contact
         label: Contact Info
-        file: data/contact/contactInfo.json
+        file: data/contact/contact.json
         extension: json
         fields:
           - {label: Contact Phone, name: contactPhone, widget: string, required: false}
