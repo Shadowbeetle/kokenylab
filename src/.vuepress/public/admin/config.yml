@@ -25,38 +25,20 @@ collections:
           - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
           - {label: "Background Image (Light)", name: "bgImage", widget: "image", required: false}
           - {label: "Background Image (Dark)", name: "bgImageDark", widget: "image", required: false}
-          - label: "Hero Text"
-            name: "heroText"
-            widget: "string"
-          - label: "Tagline"
-            name: "tagline"
-            widget: "string"
-          - label: "About Title"
-            name: "aboutTitle"
-            widget: string
+          - {label: "Hero Text", name: "heroText", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "About Title", name: "aboutTitle", widget: string}
           - {label: "About Content", name: "body", widget: "markdown"}
-          - label: Max Articles Length
-            name: articlesLength
-            widget: number
-          - label: Funding Title
-            name: fundingTitle
-            widget: string
+          - {label: Max Articles Length, name: articlesLength, widget: number}
+          - {label: Funding Title, name: fundingTitle, widget: string}
           - label: Funding Images
             name: fundingImages
             widget: list 
             required: false
             fields:
-              - label: Image
-                name: src
-                widget: image
-              - label: Height (px)
-                name: height
-                widget: number
-                default: 150
-              - label: Width (px)
-                name: width
-                widget: number
-                default: 150
+              - {label: Imagei, name: src, widget: image}
+              - {label: Height (px), name: height, widget: number, default: 150}
+              - {label: Width (px), name: width, widget: number, default: 150}
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
 
@@ -67,6 +49,25 @@ collections:
         fields:
           - {label: Title, name: title, widget: string, required: true}
           - {label: "Content", name: "body", widget: "markdown", required: true}
+
+  - name: "info"
+    label: "Info"
+    files: 
+      - name: contact
+        label: Contact Info
+        file: data/contact/contactInfo.json
+        extension: json
+        fields:
+          - {label: Contact Phone, name: contactPhone, widget: string, required: false}
+          - {label: Contact Email, name: contactEmail, widget: string, required: true}
+          - {label: Contact Person Photo, name: contactPersonPhoto, widget: image, required: false}
+          - {label: Contact Person Name, name: contactPersonName, widget: string, required: false} 
+          - {label: Contact Person Position, name: contactPersonPosition, widget: string, required: false}
+          - {label: Institution Logo, name: institutionLogo, widget: image, required: false}
+          - {label: Institution Name, name: institutionName, widget: string, required: false}
+          - {label: Institution Photo, name: institutionPhoto, widget: image, required: false}
+          - {label: Institution Address, name: institutionAddress, widget: string, required: false}
+          - {label: Additional Information, name: body, widget: markdown, required: false}
 
   - name: "news"
     label: "News"
