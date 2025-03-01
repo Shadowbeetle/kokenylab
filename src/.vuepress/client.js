@@ -1,7 +1,8 @@
 import { defineClientConfig } from "vuepress/client";
-import TeamMembers from "./components/TeamMembers.vue";
 import Landing from "./layouts/Landing.vue";
 import BlogHome from "./layouts/BlogHome.vue";
+import TeamMembers from "./components/TeamMembers.vue";
+import Contact from "./components/Contact.vue";
 
 export default defineClientConfig({
   layouts: {
@@ -10,6 +11,7 @@ export default defineClientConfig({
   },
   enhance({ app, router, siteData }) {
     app.component("TeamMembers", TeamMembers);
+    app.component("Contact", Contact);
   },
   setup() {
     // Add Netlify Identity script

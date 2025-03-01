@@ -3,6 +3,7 @@ import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
 import { getDirname } from "vuepress/utils";
 import { memberDataPlugin } from "./plugins/memberDataPlugin.js";
+import { contactDataPlugin } from "./plugins/contactDataPlugin.js";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -10,11 +11,11 @@ export default defineUserConfig({
   base: "/",
 
   lang: "en-US",
-  title: "Kοkenylab",
+  title: "Kokenylab",
   description:
     "Kidney Research Group at Semmeleweis University, Institute of Translational Medicine",
 
-  plugins: [memberDataPlugin()],
+  plugins: [memberDataPlugin(), contactDataPlugin()],
 
   theme: hopeTheme(
     {
@@ -81,6 +82,7 @@ export default defineUserConfig({
         { text: "News", link: "/news/" },
         { text: "Members", link: "/members/" },
         { text: "Publications", link: "/publications/" },
+        { text: "Contact", link: "/contact/" },
       ],
     },
     { custom: true }

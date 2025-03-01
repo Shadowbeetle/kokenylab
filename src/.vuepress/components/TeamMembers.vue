@@ -31,10 +31,9 @@
 </template>
 
 <script>
+// Cannot use TS when import from @temp
 import { computed, ref, onMounted } from 'vue';
 import { members as memberData } from '@temp/member-data/members.js';
-
-
 
 export default {
   setup() {

@@ -10,6 +10,7 @@ import BlogWrapper from "vuepress-theme-hope/modules/blog/components/BlogWrapper
 import { useArticles } from "vuepress-theme-hope/modules/blog/composables/index.js";
 
 import AboutBox from "../components/AboutBox.vue";
+import ContactCard from "../components/ContactCard.vue";
 import Funding, { type FundingImage } from "../components/Funding.vue";
 
 import "vuepress-theme-hope/blog/styles/home.scss";
@@ -26,8 +27,6 @@ const articles = useArticles().value.items.slice(0, frontmatter.value.articlesLe
 const aboutTitle = computed(() => frontmatter.value.aboutTitle);
 const fundingTitle = computed(() => frontmatter.value.fundingTitle);
 const fundingImages = computed(() => frontmatter.value.fundingImages);
-
-console.log(frontmatter.value)
 </script>
 
 <template>
@@ -60,6 +59,7 @@ console.log(frontmatter.value)
 							</DropTransition>
 						</div>
 						<div class="column">
+							<ContactCard title="Contact" />
 							<DropTransition appear :delay="0.20">
 								<Funding :title="fundingTitle" :funding-images="fundingImages" />
 							</DropTransition>

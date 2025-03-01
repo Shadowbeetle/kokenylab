@@ -1,0 +1,12 @@
+{
+	"contactPhone": "+1-234-567-8901",
+	"contactEmail": "contact@example.com",
+	"contactPersonPhoto": "/images/uploads/placeholder-1.jpg",
+	"contactPersonName": "John Doe",
+	"contactPersonPosition": "Director of Communications",
+	"institutionLogo": "https://t3.ftcdn.net/jpg/04/91/76/62/240_F_491766294_h4j7LbW2YgfbNHhq7F8GboIc1XyBSEY5.jpg",
+	"institutionName": "Example Institution",
+	"institutionPhoto": "https://global-geography.org/attach/Geography/America/United_States/Pictures/Washington/Smithsonian_Institution_Building_1/scaled-900x601-NY0165_Smithonian_Institutionjpg.jpg",
+	"institutionAddress": "123 Main Street, City, Country",
+	"body": "This is additional information about the institution. You can include markdown content here."
+}
