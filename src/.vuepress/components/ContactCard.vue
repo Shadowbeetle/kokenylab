@@ -27,8 +27,10 @@ const contact = ref(contactData);
 			<div class="flex-container">
 				<img width="150" height="150" :src="contact.institutionLogo" />
 			</div>
-			<p><strong>{{ contact.institutionName }}</strong></p>
-			<p>{{ contact.institutionAddress }}</p>
+			<div class="info-container">
+				<p><strong>{{ contact.institutionName }}</strong></p>
+				<p>{{ contact.institutionAddress }}</p>
+			</div>
 			<div class="flex-container">
 				<img width="150" height="150" :src="contact.institutionPhoto" />
 			</div>
