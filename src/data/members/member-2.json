@@ -1,1 +1,9 @@
-{"name":"Jane Smith","position":"Lab Manager","image":"/images/uploads/placeholder-2.jpg","email":"jane.smith@example.com","website":"https://example.com/janesmith","bio":"Jane Smith is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.","order":2}
+{
+  "name": "Dr. Mózes Miklós PhD",
+  "position": "head of the genetics and animal research laboratory",
+  "image": "/images/uploads/miklós.jpg",
+  "email": "mozes.miklos@semmelweis.hu",
+  "website": "",
+  "bio": "Member of the Experimental Nephrology Group of the International Nephrology Research and Training Center and Associate Professor at the Institute of Translational Medicine. Responsible for studies - English",
+  "order": 2
+}
