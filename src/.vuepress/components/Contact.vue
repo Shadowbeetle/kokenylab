@@ -6,23 +6,47 @@ import { contact as contactData } from '@temp/contact-data/contact.js';
 const contact = ref(contactData);
 </script>
 <template>
-	<div>
-		<img width="150" height="150" :src="contact.contactPersonPhoto" />
-		<h3>{{ contact.contactPersonName }}</h3>
-		<p>{{ contact.contactPersonPosition }}</p>
-		<p>{{ contact.contactEmail }}</p>
-		<p>{{ contact.contactPhone }}</p>
+	<div class="flex-container">
+		<div>
+			<img width="150" height="150" :src="contact.contactPersonPhoto" />
+		</div>
+		<div class="info-container">
+			<h3>{{ contact.contactPersonName }}</h3>
+			<p>{{ contact.contactPersonPosition }}</p>
+			<p>{{ contact.contactEmail }}</p>
+			<p>{{ contact.contactPhone }}</p>
+		</div>
 	</div>
-	<div>
-		<img width="150" height="150" :src="contact.institutionLogo" />
-		<p>{{ contact.institutionName }}</p>
-		<p>{{ contact.institutionAddress }}</p>
-		<img width="150" height="150" :src="contact.institutionPhoto" />
+	<div class="flex-container align-center">
+		<div>
+			<img width="150" height="150" :src="contact.institutionLogo" />
+		</div>
+		<div class="info-container">
+			<p><strong>{{ contact.institutionName }}</strong></p>
+			<p>{{ contact.institutionAddress }}</p>
+		</div>
+		<div>
+			<img width="150" height="150" :src="contact.institutionPhoto" />
+		</div>
 	</div>
+	<hr />
 </template>
 
 <style scoped>
-.contact-box {
-	margin: 0 0 1.25rem 0;
+.flex-container {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.info-container {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.flex-container h3 {
+	margin-top: 0;
 }
 </style>
