@@ -33,6 +33,7 @@ const props = withDefaults(defineProps<FundingProps>(), {
 .funding-img-container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .funding-img {
