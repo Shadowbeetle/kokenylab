@@ -1,1 +1,9 @@
-{"name":"Michael Johnson","position":"Postdoctoral Researcher","image":"/images/uploads/placeholder-3.jpg","email":"michael.johnson@example.com","website":"https://example.com/michaeljohnson","bio":"Michael Johnson is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.","order":3}
+{
+  "name": "Anna Manzéger PhD",
+  "position": "Postdoctoral Researcher",
+  "image": "/images/uploads/anna.jpg",
+  "email": "michael.johnson@example.com",
+  "website": "https://example.com/michaeljohnson",
+  "bio": "Michael Johnson is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.",
+  "order": 3
+}
