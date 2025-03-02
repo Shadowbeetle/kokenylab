@@ -118,19 +118,18 @@ export default {
   line-height: 1.6;
 }
 
-.even-row {
-  flex-direction: row-reverse;
-}
-
 .even-row .member-info {
   text-align: right;
 }
 
 @media (max-width: 768px) {
 
-  .member-row,
-  .even-row {
+  .member-row {
     flex-direction: column;
+  }
+
+  .even-row {
+    flex-direction: column-reverse;
   }
 
   .member-photo {
