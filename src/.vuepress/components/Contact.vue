@@ -32,9 +32,14 @@ const contact = ref(contactData);
 	<hr />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .flex-container {
 	display: flex;
+
+	@media(max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .align-center {
@@ -44,6 +49,10 @@ const contact = ref(contactData);
 .info-container {
 	margin-left: 2rem;
 	margin-right: 2rem;
+
+	@media(max-width: 768px) {
+		text-align: center;
+	}
 }
 
 .flex-container h3 {
