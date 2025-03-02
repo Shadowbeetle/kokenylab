@@ -1,9 +1,9 @@
 {
-	"name": "John Doe",
-	"position": "Principal Investigator",
-	"image": "/images/uploads/placeholder-1.jpg",
-	"email": "john.doe@example.com",
-	"website": "https://example.com/johndoe",
-	"bio": "John Doe is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.",
-	"order": 1
+  "name": "Dr. habil. Kökény Gábor PhD",
+  "position": "Principal Investigator",
+  "image": "/images/uploads/gábor.jpg",
+  "email": "kokeny.gabor@semmelweis.hu",
+  "website": "",
+  "bio": "Head of the Experimental Nephrology Group of the International Nephrology Research and Training Center and Associate Professor at the Institute of Translational Medicine",
+  "order": 1
 }
