@@ -41,7 +41,14 @@ collections:
               - {label: Width (px), name: width, widget: number, default: 150}
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
           - {label: "Footer Content", name: "footer", widget: "markdown", required: false}
-
+      
+      - name: about
+        label: About
+        file: "src/about/index.md"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: body, widget: markdown}
+      
       - name: "publications"
         label: "Publications"
         file: "src/publications/index.md"

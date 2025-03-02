@@ -81,6 +81,7 @@ export default defineUserConfig({
         { text: "Home", link: "/" },
         { text: "News", link: "/news/" },
         { text: "Members", link: "/members/" },
+        { text: "About", link: "/about/" },
         { text: "Publications", link: "/publications/" },
         { text: "Contact", link: "/contact/" },
       ],
