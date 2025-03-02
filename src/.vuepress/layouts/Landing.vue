@@ -47,7 +47,7 @@ const fundingImages = computed(() => frontmatter.value.fundingImages);
 
 							<hr class="separator" />
 
-							<h1>
+							<h1 class="news-header">
 								<AutoLink :config="{ link: '/news/', text: 'What\'s New', ariaLabel: 'News', }" :active="true"
 									class="news-link">
 									What's New
@@ -87,6 +87,12 @@ const fundingImages = computed(() => frontmatter.value.fundingImages);
 
 	@media (min-width: 768px) {
 		flex-direction: row;
+	}
+}
+
+.news-header {
+	@media (max-width: 768px) {
+		margin-left: 1rem;
 	}
 }
 

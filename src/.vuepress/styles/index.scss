@@ -22,3 +22,10 @@
 	margin-block: 0.375em;
 	margin-bottom: 1rem;
 }
+
+.vp-blog-hero-description {
+	text-align: center;
+	@media (max-width: 768px) {
+		margin-bottom: 1.25rem;
+	}
+}
