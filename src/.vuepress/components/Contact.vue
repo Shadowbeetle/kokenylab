@@ -13,8 +13,8 @@ const contact = ref(contactData);
 		<div class="info-container">
 			<h3>{{ contact.contactPersonName }}</h3>
 			<p>{{ contact.contactPersonPosition }}</p>
-			<p>{{ contact.contactEmail }}</p>
-			<p>{{ contact.contactPhone }}</p>
+			<p><a :href="`mailto:${contact.contactEmail}`">{{ contact.contactEmail }}</a></p>
+			<p><a :href="`tel:${contact.contactPhone}`"> {{ contact.contactPhone }}</a></p>
 		</div>
 	</div>
 	<div class="flex-container align-center">

@@ -16,12 +16,12 @@ const contact = ref(contactData);
 			<img width="150" height="150" :src="contact.contactPersonPhoto" />
 			<h3>{{ contact.contactPersonName }}</h3>
 			<p>{{ contact.contactPersonPosition }}</p>
-			<p>{{ contact.contactEmail }}</p>
-			<p>{{ contact.contactPhone }}</p>
+			<p><a :href="`mailto:${contact.contactEmail}`">{{ contact.contactEmail }}</a></p>
+			<p><a :href="`tel:${contact.contactPhone}`"> {{ contact.contactPhone }}</a></p>
 		</div>
 		<div>
 			<img width="150" height="150" :src="contact.institutionLogo" />
-			<p>{{ contact.institutionName }}</p>
+			<p><strong>{{ contact.institutionName }}</strong></p>
 			<p>{{ contact.institutionAddress }}</p>
 			<img width="150" height="150" :src="contact.institutionPhoto" />
 		</div>
