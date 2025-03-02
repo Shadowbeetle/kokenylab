@@ -1,5 +1,6 @@
 import path from "path";
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite";
 import { hopeTheme } from "vuepress-theme-hope";
 import { getDirname } from "vuepress/utils";
 import { memberDataPlugin } from "./plugins/memberDataPlugin.js";
@@ -16,6 +17,15 @@ export default defineUserConfig({
     "Kidney Research Group at Semmeleweis University, Institute of Translational Medicine",
 
   plugins: [memberDataPlugin(), contactDataPlugin()],
+
+  bundler: viteBundler({
+    viteOptions: {
+      server: {
+        allowedHosts: true,
+      },
+    },
+    vuePluginOptions: {},
+  }),
 
   theme: hopeTheme(
     {
