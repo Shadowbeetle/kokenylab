@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<FundingProps>(), {
 
 <style scoped>
 .funding-box {
-	width: 100%
+	margin-bottom: 1.25rem;
 }
 
 .funding-img-container {
