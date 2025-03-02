@@ -13,23 +13,48 @@ const contact = ref(contactData);
 			<header class="content-title" v-html="props.title"></header>
 		</AutoLink>
 		<div>
-			<img width="150" height="150" :src="contact.contactPersonPhoto" />
-			<h3>{{ contact.contactPersonName }}</h3>
-			<p>{{ contact.contactPersonPosition }}</p>
-			<p><a :href="`mailto:${contact.contactEmail}`">{{ contact.contactEmail }}</a></p>
-			<p><a :href="`tel:${contact.contactPhone}`"> {{ contact.contactPhone }}</a></p>
+			<div class="flex-container">
+				<img width="150" height="150" :src="contact.contactPersonPhoto" />
+			</div>
+			<div class="info-container">
+				<h3>{{ contact.contactPersonName }}</h3>
+				<p>{{ contact.contactPersonPosition }}</p>
+				<p><a :href="`mailto:${contact.contactEmail}`">{{ contact.contactEmail }}</a></p>
+				<p><a :href="`tel:${contact.contactPhone}`"> {{ contact.contactPhone }}</a></p>
+			</div>
 		</div>
 		<div>
-			<img width="150" height="150" :src="contact.institutionLogo" />
+			<div class="flex-container">
+				<img width="150" height="150" :src="contact.institutionLogo" />
+			</div>
 			<p><strong>{{ contact.institutionName }}</strong></p>
 			<p>{{ contact.institutionAddress }}</p>
-			<img width="150" height="150" :src="contact.institutionPhoto" />
+			<div class="flex-container">
+				<img width="150" height="150" :src="contact.institutionPhoto" />
+			</div>
 		</div>
 	</div>
 </template>
 
 <style scoped>
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.info-container {
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+
 .contact-box {
 	margin: 0 0 1.25rem 0;
+}
+
+.contact-box img {
+	text-align: center;
 }
 </style>
