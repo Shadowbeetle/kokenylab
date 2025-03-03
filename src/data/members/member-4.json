@@ -1,1 +1,9 @@
-{"name":"Emily Davis","position":"PhD Student","image":"/images/uploads/placeholder-4.jpg","email":"emily.davis@example.com","website":"https://example.com/emilydavis","bio":"Emily Davis is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.","order":4}
+{
+  "name": "Samane Haghighi",
+  "position": "PhD Student",
+  "image": "/images/uploads/sami.jpg",
+  "email": "haghighi_samane@yahoo.com",
+  "website": "",
+  "bio": "PhD student and valued member of our research team, with expertise in cell culture and pharmacological experiments.",
+  "order": 4
+}
