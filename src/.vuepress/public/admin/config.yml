@@ -108,6 +108,6 @@ collections:
       - {label: "Photo", name: "image", widget: "image", required: false}
       - {label: "Email", name: "email", widget: "string", required: false}
       - {label: "Website", name: "website", widget: "string", required: false}
-      - {label: "Bio", name: "bio", widget: "text"}
+      - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Order", name: "order", widget: "number", default: 10, required: false, hint: "Lower numbers appear first"}
 

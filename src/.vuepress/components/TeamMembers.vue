@@ -19,7 +19,7 @@
           <a :href="member.website" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
 
-        <div class="member-bio" v-html="member.bio"></div>
+        <div class="member-bio" v-html="member.renderedBio"></div>
       </div>
 
       <div v-if="index % 2 === 1" class="member-photo">
@@ -30,29 +30,23 @@
   </div>
 </template>
 
-<script>
+<script setup>
 // Cannot use TS when import from @temp
 import { computed, ref, onMounted } from 'vue';
 import { members as memberData } from '@temp/member-data/members.js';
 
-export default {
-  setup() {
-    const members = ref(memberData);
+const members = ref(memberData);
 
-    const sortedMembers = computed(() => {
-      return [...members.value].sort((a, b) => {
-        // Sort by order field first (if available)
-        if (a.order !== undefined && b.order !== undefined) {
-          return a.order - b.order;
-        }
-        // Fall back to alphabetical by name
-        return a.name.localeCompare(b.name);
-      });
-    });
-
-    return { sortedMembers };
-  }
-}
+const sortedMembers = computed(() => {
+  return [...members.value].sort((a, b) => {
+    // Sort by order field first (if available)
+    if (a.order !== undefined && b.order !== undefined) {
+      return a.order - b.order;
+    }
+    // Fall back to alphabetical by name
+    return a.name.localeCompare(b.name);
+  });
+});
 </script>
 
 <style scoped>
