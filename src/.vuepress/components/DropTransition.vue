@@ -18,7 +18,6 @@ onMounted(() => {
 		isMounted.value = true;
 	}, props.delay * 1000);
 });
-
 </script>
 
 <style scoped>

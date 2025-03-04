@@ -41,8 +41,9 @@ onMounted(() => {
 <template>
 	<BlogWrapper>
 		<div class="vp-blog vp-page">
-			<BlogHero>
-			</BlogHero>
+			<DropTransition :delay="0.08">
+				<BlogHero></BlogHero>
+			</DropTransition>
 
 			<div class="blog-page-wrapper custom">
 				<main id="main-content">
@@ -54,28 +55,28 @@ onMounted(() => {
 								</AboutBox>
 							</DropTransition>
 
-						<hr class="separator" />
+							<hr class="separator" />
 
-						<h1 class="news-header">
-							<AutoLink :config="{ link: '/news/', text: 'What\'s New', ariaLabel: 'News', }" :active="true"
-								class="news-link">
-								What's New
-							</AutoLink>
-						</h1>
+							<h1 class="news-header">
+								<AutoLink :config="{ link: '/news/', text: 'What\'s New', ariaLabel: 'News', }" :active="true"
+									class="news-link">
+									What's New
+								</AutoLink>
+							</h1>
 
-						<ArticleList :items="articles" />
+							<ArticleList :items="articles" />
+						</div>
+						<div class="column">
+							<DropTransition :delay="0.16">
+								<ContactCard title="Contact" />
+							</DropTransition>
+							<DropTransition :delay="0.20">
+								<Funding :title="fundingTitle" :funding-images="fundingImages" />
+							</DropTransition>
+						</div>
 					</div>
-					<div class="column">
-						<DropTransition :delay="0.16">
-							<ContactCard title="Contact" />
-						</DropTransition>
-						<DropTransition :delay="0.20">
-							<Funding :title="fundingTitle" :funding-images="fundingImages" />
-						</DropTransition>
-					</div>
+				</main>
 			</div>
-			</main>
-		</div>
 		</div>
 	</BlogWrapper>
 </template>
