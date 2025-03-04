@@ -64,7 +64,9 @@ onMounted(() => {
 								</AutoLink>
 							</h1>
 
-							<ArticleList :items="articles" />
+							<DropTransition :delay="0.16">
+								<ArticleList :items="articles" />
+							</DropTransition>
 						</div>
 						<div class="column">
 							<DropTransition :delay="0.16">
