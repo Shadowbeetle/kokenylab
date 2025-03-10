@@ -1,1 +1,9 @@
-{"name":"Robert Wilson","position":"Research Assistant","image":"/images/uploads/placeholder-5.jpg","email":"robert.wilson@example.com","website":"https://example.com/robertwilson","bio":"Robert Wilson is a valued member of our research team with expertise in various research areas. They contribute significantly to our ongoing projects.","order":5}
+{
+  "name": "Krisztina Mikóné Fazekas ",
+  "position": "Lab. Technician",
+  "image": "/images/uploads/kriszi.jpg",
+  "email": "fazekas.krisztina@semmelweis.hu",
+  "website": "",
+  "bio": "Technician, specializing in **immunostaining, blotting, RNA isolation, qPCR, and blood and urine chemistry analyses**.",
+  "order": 5
+}
