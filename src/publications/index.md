@@ -4,7 +4,7 @@ layout: Layout
 ---
 # Publications
 
-1. Stepanova G, Manzéger A, Mózes MM, Kökény G. Renal Epithelial Complement C3 Expression Affects Kidney Fibrosis Progression. Int J Mol Sci. **2024** Nov 22;25(23):12551. [doi: 10.3390/ijms252312551](https://pubmed.ncbi.nlm.nih.gov/39684261/). PMID: 39684261; PMCID: PMC11640822.
+1. Stepanova G, Manzéger A, Mózes MM, Kökény G. **Renal Epithelial Complement C3 Expression Affects Kidney Fibrosis Progression**. Int J Mol Sci. **2024** Nov 22;25(23):12551. [doi: 10.3390/ijms252312551](https://pubmed.ncbi.nlm.nih.gov/39684261/). PMID: 39684261; PMCID: PMC11640822.
 2. Garmaa G, Manzéger A, Haghighi S, Kökény G. HK-2 cell response to TGF-β highly depends on cell culture medium formulations. Histochem Cell Biol. **2024** Jan;161(1):69-79. doi: 10.1007/s00418-023-02237-x. Epub 2023 Sep 26. PMID: 37752256; PMCID: PMC10794419.
 3. Garmaa G, Manzéger A, Haghighi S, Kökény G. HK-2 cell response to TGF-β highly depends on cell culture medium formulations. Histochem Cell Biol. **2024** Jan;161(1):69-79. doi: 10.1007/s00418-023-02237-x. Epub 2023 Sep 26. PMID: 37752256; PMCID: PMC10794419.
 4. Garmaa G, Bunduc S, Kói T, Hegyi P, Csupor D, Ganbat D, Dembrovszky F, Meznerics FA, Nasirzadeh A, Barbagallo C, Kökény G. A Systematic Review and Meta-Analysis of microRNA Profiling Studies in Chronic Kidney Diseases. Noncoding RNA. **2024** May 3;10(3):30. doi: 10.3390/ncrna10030030. PMID: 38804362; PMCID: PMC11130806.
