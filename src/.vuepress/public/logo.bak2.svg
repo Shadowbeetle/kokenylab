@@ -27,8 +27,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3249068"
-     inkscape:cx="30.190802"
-     inkscape:cy="124.91444"
+     inkscape:cx="25.662181"
+     inkscape:cy="136.99076"
      inkscape:window-width="1600"
      inkscape:window-height="831"
      inkscape:window-x="0"
@@ -42,6 +42,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-83.457706,-95.661236)">
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.926591;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6930-2-1-1"
+       cx="105.12333"
+       cy="116.41068"
+       rx="21.665623"
+       ry="20.749447"
+       inkscape:export-filename="/home/anna/Code/kokenylab/src/logo2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g11431"
        transform="matrix(0.44237666,0,0,0.44237666,-30.253729,197.79693)"
