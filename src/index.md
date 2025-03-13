@@ -6,7 +6,7 @@ bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 heroText: "Experimental Nephrology Group "
 tagline: International Nephrology Research and Training Center
-aboutTitle: Welcome to Gábor Kökény's Research Group!
+aboutTitle: Welcome to the website of Gábor Kökény's Research Group!
 articlesLength: 5
 copyright: false
 layout: Landing
