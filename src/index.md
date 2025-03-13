@@ -4,10 +4,9 @@ title: Project home
 heroImage: /logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
-heroText: Gábor Kökény's lab
-tagline: Experimental Nephrology Group of the International Nephrology Research
-  and Training Center
-aboutTitle: Welcome to Our Research Group!
+heroText: "Experimental Nephrology Group "
+tagline: International Nephrology Research and Training Center
+aboutTitle: Welcome to Gábor Kökény's Research Group!
 articlesLength: 5
 copyright: false
 layout: Landing
