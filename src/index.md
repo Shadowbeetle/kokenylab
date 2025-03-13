@@ -1,21 +1,19 @@
 ---
 home: true
-layout: Landing
 title: Project home
 heroImage: /logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
-bgImageStyle:
-  background-attachment: fixed
-heroText: Project name
-tagline: You can place the description of the project here.
-copyright: false
-footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
-aboutTitle: Welcome to the website of Kokenylab!
-aboutContent: Hello
+heroText: Gábor Kökény's lab
+tagline: Experimental Nephrology Group of the International Nephrology Research
+  and Training Center
+aboutTitle: Welcome to Our Research Group!
 articlesLength: 5
+copyright: false
+layout: Landing
+aboutContent: Hello
 fundingTitle: Funding
-fundingImages: 
+fundingImages:
   - src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/900px-Tesla_logo.png
     width: 150
     height: 150
@@ -25,10 +23,8 @@ fundingImages:
   - src: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Boeing_full_logo.svg/768px-Boeing_full_logo.svg.png
     width: 150
     height: 35
+footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
+bgImageStyle:
+  background-attachment: fixed
 ---
-
-This is an example of a project homepage. You can place your main content here.
-
-To use this layout, you need to set `home: true` in the page front matter.
-
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://theme-hope.vuejs.press/guide/layout/home/).
+Our team is dedicated to advancing **therapeutic strategies for kidney fibrosis**. Through cutting-edge **genetic, molecular, and cellular research**, we explore the mechanisms driving disease progression and identify potential treatment targets. Using state-of-the-art laboratory techniques and **transgenic models**, we aim to develop innovative approaches to slow or prevent kidney fibrosis, ultimately improving patient outcomes.
