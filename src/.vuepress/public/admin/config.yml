@@ -36,7 +36,7 @@ collections:
             widget: list 
             required: false
             fields:
-              - {label: Imagei, name: src, widget: image}
+              - {label: Image, name: src, widget: image}
               - {label: Height (px), name: height, widget: number, default: 150}
               - {label: Width (px), name: width, widget: number, default: 150}
           - {label: "Footer Copyright Status", name: "copyright", widget: "boolean", default: false}
