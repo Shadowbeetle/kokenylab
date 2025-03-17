@@ -22,8 +22,8 @@ fundingImages:
   - src: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Boeing_full_logo.svg/768px-Boeing_full_logo.svg.png
     width: 150
     height: 35
-  - height: 220
-    width: 50
+  - height: 50
+    width: 220
     src: /images/uploads/nephrologia-logo.png
 footer: Published by Kokenylab | Copyright © 2025-present Anna Manzéger
 bgImageStyle:
