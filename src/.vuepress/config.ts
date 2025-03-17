@@ -95,6 +95,7 @@ export default defineUserConfig({
         { text: "Publications", link: "/publications/" },
         { text: "Contact", link: "/contact/" },
       ],
+      breadcrumb: false,
     },
     { custom: true }
   ),
